@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+~/dwl_drag/dwl -s ~/somebar/build/somebar &
+ ~/someblocks/someblocks &
+sleep 0.5;swaybg -c '#f2e5bc' &
+sleep 0.5;wlsunset -l 43.8554 -L 10.5664 &
