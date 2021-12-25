@@ -6,9 +6,5 @@ if [[ -f ~/.bashrc ]] ; then
 	. ~/.bashrc
 fi
 
-export XKB_DEFAULT_LAYOUT=us
-export XKB_DEFAULT_OPTIONS=intl
-
-# If running from tty1 start sway
-[ "$(tty)" = "/dev/tty1" ] && exec ~/dwl_drag/dwl -s ~/somebar/build/somebar
-sleep 2;swaybg -c '#f2e5bc' &
+# If running from tty1 start dwl
+[ "$(tty)" = "/dev/tty1" ] && ~/.local/bin/startdwl
