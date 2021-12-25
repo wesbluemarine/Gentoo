@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+bemenu-run -i --fn "JetBrainsMono 11" --nb='#003030' --sb='#006060' --tb='#003030' --tf='#bbbbbb' --fb='#003030' --ff='#bbbbbb' --tb='#006060' --tf='#eeeeee' --hb='#006060' --hf='#eeeeee' -p ""
