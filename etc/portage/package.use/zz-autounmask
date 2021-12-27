@@ -1,0 +1,8 @@
+# package.use# required by dev-lang/zig-0.9.0::gentoo
+# required by gui-wm/river-9999::wayland-desktop
+# required by =gui-wm/river-9999::wayland-desktop (argument)
+>=sys-devel/llvm-13.0.0 llvm_targets_Hexagon llvm_targets_RISCV llvm_targets_AVR llvm_targets_Mips llvm_targets_SystemZ llvm_targets_MSP430 llvm_targets_AMDGPU llvm_targets_WebAssembly llvm_targets_PowerPC llvm_targets_ARM llvm_targets_XCore llvm_targets_Sparc llvm_targets_NVPTX llvm_targets_Lanai llvm_targets_BPF llvm_targets_AArch64
+# required by xfce-base/xfce4-panel-4.16.3::gentoo[dbusmenu]
+# required by xfce-base/thunar-4.17.7::gentoo[trash-panel-plugin]
+# required by thunar (argument)
+>=dev-libs/libdbusmenu-16.04.0-r1 gtk3
