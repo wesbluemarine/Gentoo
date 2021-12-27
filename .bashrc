@@ -21,20 +21,17 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-
 shopt -s checkwinsize
 shopt -s autocd
-export HISTCONTROL=ignoredups
 complete -cf doas
-#export XDG_SESSION_TYPE=wayland
-SDL_VIDEODRIVER=wayland
-export GDK_BACKEND=wayland
-export QT_QPA_PLATFORM=xcb
-#setxkbmap -layout us -variant intl
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
+
+export HISTCONTROL=ignoredumps
+export GDK_BACKEND=wayland
+export QT_QPA_PLATFORM=xcb
 export LITE_SCALE=1.0
 
 GREEN="\[$(tput setaf 2)\]"
 RESET="\[$(tput sgr0)\]"
-PS1="${GREEN}\[\e[1m\]\w\$\[\e[0m\] ${RESET}"
+PS1="${GREEN}\[\e[1m\]\w\  \[\e[0m\] ${RESET}"
