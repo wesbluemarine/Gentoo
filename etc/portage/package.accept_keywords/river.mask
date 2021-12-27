@@ -1,0 +1,2 @@
+=gui-apps/waybar-9999::gentoo **
+=gui-wm/river-9999::wayland-desktop **
