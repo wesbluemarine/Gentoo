@@ -1,6 +1,10 @@
 #!/bin/bash
 
-if pgrep -x 'wf-recorder' > /dev/null; then
-		echo " "
-fi
+FILE=/tmp/screencast
+PID="$(</tmp/screencast)"
 
+if test -f "$FILE"; then
+	trap "rm -f /tmp/screencast" EXIT && kill -SIGINT "$PID" && notify-send "Saved screencast on disk"
+else
+	wf-recorder -f ~/Videos/Screencast/$(date +%F-%T).mp4 >/dev/null 2>&1 & echo $! > /tmp/screencast
+fi
