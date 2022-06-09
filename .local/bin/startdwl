@@ -1,6 +1,6 @@
 #!/bin/sh
 
-exec dbus-run-session dwl -s 'cat | somebar &
+exec dbus-run-session ~/.local/bin/dwl/dwl -s 'cat | somebar &
 
 wbg ~/Pictures/Wallpapers/#ECECEC.jpeg &
 fnott &
