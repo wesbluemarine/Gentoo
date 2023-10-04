@@ -1,0 +1,14 @@
+alt + shift + Return
+	alacritty
+
+alt + p
+	dbus-run-session dmenu_raise.sh
+
+Print
+	screenshot.sh
+
+alt + s
+	fd . /home/makaba | sed -e "s/'/\\\'/g" -e 's/\ /\\ /g' | sort -f | dmenu -l 0 -i -p 'Find:' | handlr open
+
+F11
+	shodc state -f
