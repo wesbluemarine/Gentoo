@@ -21,17 +21,24 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+if [ -d "$HOME/.local/share/flatpak/exports/bin" ]; then
+     PATH="$HOME/.local/share/flatpak/exports/bin:$PATH"
+fi
+
 shopt -s checkwinsize
 shopt -s autocd
 complete -cf doas
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
+export EDITOR=nvim
 export HISTCONTROL=ignoredumps
-export GDK_BACKEND=wayland
-export QT_QPA_PLATFORM=xcb
-export LITE_SCALE=1.0
+export NPM_CONFIG_PREFIX=~/.npm-global
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH=$PATH:~/.npm-global/bin
+export GOPATH=$HOME/.local/bin/go
+export SDL_VIDEODRIVER=wayland
+export LITE_SCALE=1 
 
-GREEN="\[$(tput setaf 2)\]"
-RESET="\[$(tput sgr0)\]"
-PS1="${GREEN}\[\e[1m\]\w\  \[\e[0m\] ${RESET}"
+titleclock.sh
