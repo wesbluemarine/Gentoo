@@ -1,0 +1,19 @@
+{
+    "mode": "overlay",
+    "layer": "top",
+    "position": "right",
+    "margin-top": 950,
+    "width": 260,
+
+    // Choose the order of the modules
+    "modules-left": ["clock"],
+      "clock": {
+        "format": "{:%H:%M %a}"
+    },
+    "modules-center": ["custom/clock"],
+      "custom/clock": {
+        "exec": "date '+%d %B %Y'",
+        "interval": 1,
+    },
+
+}
