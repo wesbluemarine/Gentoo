@@ -2,8 +2,7 @@
     "mode": "overlay",
     "layer": "top",
     "position": "right",
-    "margin-top": 950,
-    "width": 260,
+    "margin-top": 1010,
 
     // Choose the order of the modules
     "modules-left": ["clock"],
@@ -13,7 +12,6 @@
     "modules-center": ["custom/clock"],
       "custom/clock": {
         "exec": "date '+%d %B %Y'",
-        "interval": 1,
     },
 
 }
