@@ -2,7 +2,6 @@
     border: none;
     border-radius: 0;
     font-family: "segoeui light";
-    min-height: 0;
     color: #ffffff;
 }
 
@@ -14,8 +13,7 @@ window#waybar {
 
 #clock {
 
-    font-size: 60px;
-    padding: 1px;
+    font-size: 30px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -23,8 +21,7 @@ window#waybar {
 #custom-clock
 {
 
-    font-size: 30px;
-    padding: 1px;
+    font-size: 15px;
     padding-left: 10px;
     padding-right: 10px;
 }
