@@ -1,0 +1,38 @@
+font:
+  normal:
+    family: JetBrainsMonoNerdFont
+    style: Regular
+  size: 10
+
+window:
+  #title: Alacritty
+  dynamic_title: true
+  padding:
+   x: 2
+   y: 2
+
+# Colors (Zhi)
+colors:
+  primary:
+    background: '#fbf7b7'
+    foreground: '#2a2c2b'
+
+  normal:
+    black:   '#fbf7b7'
+    red:     '#57021e'
+    green:   '#1E5702'
+    yellow:  '#824C04'
+    blue:    '#021e57'
+    magenta: '#3b0257'
+    cyan:    '#2c6565'
+    white:   '#403E41'
+
+  bright:
+    black:   '#fbf7b7'
+    red:     '#57021e'
+    green:   '#1E5702'
+    yellow:  '#824C04'
+    blue:    '#021e57'
+    magenta: '#3b0257'
+    cyan:    '#2c6565'
+    white:   '#686d6b'
